@@ -13,7 +13,7 @@ class Mywidget extends StatelessWidget {
       child: Container(
         width: 300,
         decoration: BoxDecoration(
-            color: Colors.grey.shade300,
+            color: Color.fromARGB(67, 153, 153, 153),
             borderRadius: BorderRadius.circular(30)),
         child: Row(
           children: [

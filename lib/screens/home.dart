@@ -1,7 +1,11 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lab_08/components/Mywidgets.dart';
+import 'package:lab_08/components/mywidget_restaurant.dart';
 import 'package:lab_08/screens/electronshops.dart';
+import 'package:lab_08/screens/resturants.dart';
 import 'package:lab_08/screens/shops.dart';
 
 class Home extends StatefulWidget {
@@ -15,12 +19,24 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Fast Delivery")),
+      extendBody: true,
+      appBar: AppBar(
+        title: Text("Fast Delivery"),
+        centerTitle: true,
+      ),
       body: SingleChildScrollView(
           child: Container(
         decoration: BoxDecoration(
-            gradient: LinearGradient(
-                colors: [Colors.red.shade200, Colors.cyan.shade300])),
+          gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Color.fromARGB(255, 230, 230, 230),
+                Colors.grey.shade200,
+                Color.fromARGB(255, 255, 221, 225),
+                Color.fromARGB(255, 255, 169, 169),
+              ]),
+        ),
         child: Column(
           children: [
             Container(
@@ -43,7 +59,8 @@ class _HomeState extends State<Home> {
                 "Food        ", () {
               Navigator.push(context, MaterialPageRoute(
                 builder: (context) {
-                  return Screen1();
+                  return Shops(shopType: "Resturants");
+                  // return Screen1();
                 },
               ));
             }),
@@ -55,7 +72,8 @@ class _HomeState extends State<Home> {
                 "Electronics", () {
               Navigator.push(context, MaterialPageRoute(
                 builder: (context) {
-                  return Screen2();
+                  return Shops(shopType: "Electronics");
+                  // return Screen2();
                 },
               ));
             }),

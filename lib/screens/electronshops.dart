@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lab_08/components/mywidgetshop.dart';
+import 'package:lab_08/components/mywidget_restaurant.dart';
 import 'package:lab_08/screens/items.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -23,7 +23,7 @@ class _Screen2State extends State<Screen2> {
           SizedBox(
             height: 40,
           ),
-          restaurant(
+          restaurantList(
               title1: "Action Mobile",
               rate: "5",
               imageurl:
@@ -32,7 +32,7 @@ class _Screen2State extends State<Screen2> {
           SizedBox(
             height: 40,
           ),
-          restaurant(
+          restaurantList(
               title1: "Aladdin",
               rate: "3.5",
               imageurl:
@@ -40,7 +40,7 @@ class _Screen2State extends State<Screen2> {
           SizedBox(
             height: 40,
           ),
-          restaurant(
+          restaurantList(
               title1: "City Center",
               rate: "4",
               imageurl:
@@ -48,7 +48,7 @@ class _Screen2State extends State<Screen2> {
           SizedBox(
             height: 40,
           ),
-          restaurant(
+          restaurantList(
               title1: "BCI",
               rate: "4.3",
               imageurl:
@@ -56,7 +56,7 @@ class _Screen2State extends State<Screen2> {
           SizedBox(
             height: 40,
           ),
-          restaurant(
+          restaurantList(
               title1: "SmartBuy",
               rate: "4.1",
               imageurl:

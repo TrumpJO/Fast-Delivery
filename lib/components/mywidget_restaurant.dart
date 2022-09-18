@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class restaurant extends StatelessWidget {
-  restaurant(
+class restaurantList extends StatelessWidget {
+  restaurantList(
       {this.title1,
       this.imageurl,
       this.rate,
